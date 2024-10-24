@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.Admin.EmployeeManagement.ViewEmployeeFormController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-4.0" prefHeight="772.0" prefWidth="1164.0" style="-fx-background-color: #A61943;" />
+      <Label layoutX="36.0" text="CLOTHIFY" textFill="RED">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="116.0" text="Your One-Stop Shop for Style" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblEmplyee" layoutX="33.0" layoutY="171.0" prefHeight="570.0" prefWidth="1093.0">
+         <columns>
+            <TableColumn fx:id="colEmpID" prefWidth="84.33333587646484" text="EMPLOYEE ID" />
+            <TableColumn fx:id="colEmpName" prefWidth="187.0" text="FULL NAME" />
+            <TableColumn fx:id="colEmpAge" prefWidth="55.0" text="AGE" />
+            <TableColumn fx:id="colEmpGender" prefWidth="70.0" text="GENDER" />
+            <TableColumn fx:id="colEmpNIC" prefWidth="145.0" text="NIC NUMBER" />
+            <TableColumn fx:id="colEmpContact" prefWidth="125.33331298828125" text="CONTACT NUMBER" />
+            <TableColumn fx:id="colEmpAddress" prefWidth="254.33331298828125" text="ADDRESS" />
+            <TableColumn fx:id="colEmpEmail" prefWidth="180.66668701171875" text="EMAIL" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

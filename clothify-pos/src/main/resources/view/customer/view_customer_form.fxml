@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.Common.CustomerManagement.ViewCustomerFormController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-4.0" prefHeight="772.0" prefWidth="1164.0" style="-fx-background-color: #F96388;" />
+      <Label layoutX="36.0" text="CLOTHIFY" textFill="RED">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="116.0" text="Your One-Stop Shop for Style" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomer" layoutX="33.0" layoutY="171.0" prefHeight="570.0" prefWidth="1093.0">
+         <columns>
+            <TableColumn fx:id="colCustID" prefWidth="128.3333282470703" text="CUSTOMER ID" />
+            <TableColumn fx:id="colCustTitle" prefWidth="83.33332824707031" text="TITLE" />
+            <TableColumn fx:id="colCustName" prefWidth="284.33331298828125" text="NAME" />
+            <TableColumn fx:id="colCustNIC" prefWidth="188.3333740234375" text="NIC NUMBER" />
+            <TableColumn fx:id="colCustContact" prefWidth="161.6666259765625" text="CONTACT NUMBER" />
+            <TableColumn fx:id="colCustEmail" prefWidth="251.0" text="EMAIL" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

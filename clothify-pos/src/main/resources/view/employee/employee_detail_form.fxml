@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.Admin.EmployeeManagement.EmployeeDetailFormController">
+   <children>
+      <ImageView fitHeight="638.0" fitWidth="430.0" layoutY="-3.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/employee/employee_detail_bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="-20.0" prefHeight="126.0" prefWidth="302.0" text="CLOTHIFY" textFill="RED">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="70.0" text="Your One-Stop Shop for Style" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtViewEmployeeID" focusColor="RED" layoutX="14.0" layoutY="195.0" prefHeight="39.0" prefWidth="91.0" promptText="ID" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeName" focusColor="RED" layoutX="14.0" layoutY="236.0" prefHeight="39.0" prefWidth="391.0" promptText="FULL NAME">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeAge" focusColor="RED" layoutX="14.0" layoutY="277.0" prefHeight="39.0" prefWidth="91.0" promptText="AGE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeGender" focusColor="RED" layoutX="14.0" layoutY="318.0" prefHeight="39.0" prefWidth="91.0" promptText="GENDER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeNIC" focusColor="RED" layoutX="14.0" layoutY="359.0" promptText="NIC NUMBER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeContact" focusColor="RED" layoutX="14.0" layoutY="400.0" promptText="CONTACT NUMBER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeAddress" focusColor="RED" layoutX="14.0" layoutY="441.0" prefHeight="39.0" prefWidth="391.0" promptText="ADDRESS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewEmployeeEmail" focusColor="RED" layoutX="14.0" layoutY="482.0" prefHeight="39.0" prefWidth="325.0" promptText="EMAIL">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnEmployeeUpdate2" buttonType="RAISED" layoutX="14.0" layoutY="571.0" onAction="#btnEmployeeUpdate2OnAction" ripplerFill="#ff00ee" text="UPDATE" textFill="#ff4af9">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnEmployeeDelete" buttonType="RAISED" layoutX="284.0" layoutY="571.0" onAction="#btnEmployeeDeleteOnAction" ripplerFill="#ff00ee" text="DELETE" textFill="#ff277d">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

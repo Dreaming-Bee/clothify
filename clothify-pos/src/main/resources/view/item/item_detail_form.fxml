@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.Common.ItemManagement.ItemDetailFormController">
+   <children>
+      <ImageView fitHeight="645.0" fitWidth="435.0" layoutX="-3.0" layoutY="-10.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/item/item_detail_bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="-20.0" prefHeight="126.0" prefWidth="302.0" text="CLOTHIFY" textFill="RED">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="70.0" text="Your One-Stop Shop for Style" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtViewItemCode" focusColor="RED" layoutX="14.0" layoutY="223.0" prefHeight="39.0" prefWidth="115.0" promptText="ITEM CODE" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewItemName" focusColor="RED" layoutX="15.0" layoutY="274.0" prefHeight="39.0" prefWidth="316.0" promptText="NAME" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewItemPrice" focusColor="RED" layoutX="14.0" layoutY="325.0" prefHeight="39.0" prefWidth="115.0" promptText="PRICE" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewItemQuantity" focusColor="RED" layoutX="14.0" layoutY="376.0" prefHeight="39.0" prefWidth="115.0" promptText="QUANTITY" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtViewItemSize" focusColor="RED" layoutX="14.0" layoutY="427.0" prefHeight="39.0" prefWidth="115.0" promptText="SIZE" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnItemUpdate2" buttonType="RAISED" layoutX="14.0" layoutY="571.0" onAction="#btnItemUpdate2OnAction" ripplerFill="#ff00ee" text="UPDATE" textFill="#ff4af9">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnItemDelete" buttonType="RAISED" layoutX="284.0" layoutY="571.0" onAction="#btnItemDeleteOnAction" ripplerFill="#ff00ee" text="DELETE" textFill="#ff277d">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtViewItemSupplierID" focusColor="RED" layoutX="15.0" layoutY="478.0" prefHeight="39.0" prefWidth="115.0" promptText="SUPPLIER ID" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

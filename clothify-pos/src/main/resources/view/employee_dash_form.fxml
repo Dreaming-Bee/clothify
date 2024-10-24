@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.Employee.EmployeeDashFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="717.0" prefWidth="1151.0">
+         <children>
+            <ImageView fitHeight="775.0" fitWidth="1171.0" layoutX="-12.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/employee_dashboard_bg.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="14.0" text="CLOTHIFY" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="100.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="130.0" text="Your One-Stop Shop for Style" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnManageItemEmp" buttonType="RAISED" layoutX="37.0" layoutY="223.0" onAction="#btnManageItemEmpOnAction" ripplerFill="#ff00ee" text="MANAGE ITEMS" textFill="#da9bff">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnManageSupplierEmp" buttonType="RAISED" layoutX="37.0" layoutY="283.0" onAction="#btnManageSupplierEmpOnAction" ripplerFill="#ff00ee" text="MANAGE SUPPLIERS" textFill="#da9bff">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPlaceOrderEmp" buttonType="RAISED" layoutX="37.0" layoutY="344.0" onAction="#btnPlaceOrderEmpOnAction" ripplerFill="#ff00ee" text="PLACE ORDERS" textFill="#da9bff">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnManageCustomersEmp" buttonType="RAISED" layoutX="34.0" layoutY="407.0" onAction="#btnManageCustomersEmpOnAction" ripplerFill="#ff00ee" text="MANAGE CUSTOMERS" textFill="#da9bff">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

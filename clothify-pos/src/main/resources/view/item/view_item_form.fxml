@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.Common.ItemManagement.ViewItemFormController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-4.0" prefHeight="772.0" prefWidth="1164.0" style="-fx-background-color: #A5EAEF;" />
+      <Label layoutX="36.0" text="CLOTHIFY" textFill="RED">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="116.0" text="Your One-Stop Shop for Style" textFill="#b4b4b4">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblItem" layoutX="33.0" layoutY="171.0" prefHeight="570.0" prefWidth="1093.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="105.66666412353516" text="ITEM CODE" />
+            <TableColumn fx:id="colItemName" prefWidth="399.33333587646484" text="NAME" />
+            <TableColumn fx:id="colItemSize" prefWidth="141.3333740234375" text="SIZE" />
+            <TableColumn fx:id="colItemPrice" prefWidth="132.6666259765625" text="PRICE" />
+            <TableColumn fx:id="colItemQuantity" prefWidth="107.3333740234375" text="QUANTITY" />
+            <TableColumn fx:id="colItemSupplierID" prefWidth="212.6666259765625" text="SUPPLIER ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
